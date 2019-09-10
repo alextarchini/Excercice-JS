@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex js 02</title>
+</head>
+<body>
+    <button onclick="rayon()">calculer la surface d'un cercle</button>
+    <p id="surface"></p>
+    <script>
+    function rayon(){
+        var ray= prompt('entrez le rayon du cercle');
+        var result = (ray^2) * Math.PI;
+        document.getElementById('surface').innerHTML = result
+    }
+    </script>
+</body>
+</html>
