@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="surfaceRectagle()">calculer la surface d'un rectangle</button>
+    <p id="rctsquare"></p>
+    <button onclick="periRectangle()">calculer le perimetre d'un rectangle</button>
+    <p id="perirect"></p>
+    <script>
+    function surfaceRectagle() {
+        var lng = parseInt(prompt('entrez la longueur du rectangle en mètre'));
+        var lgr = parseInt(prompt('entrez la largeur du rectangle en mettre'));
+        var result = lng*lgr;
+        document.getElementById('rctsquare').innerHTML= result;
+    }
+    function periRectangle() {
+        var lng = parseInt(prompt('entrez la longueur du rectangle en mètre'));
+        var lgr = parseInt(prompt('entrez la largeur du rectangle en mettre'));
+        var result = (lng+lgr)*2;
+        document.getElementById('perirect').innerHTML= result;
+    }
+    </script>
+</body>
+</html>
