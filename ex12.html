@@ -9,9 +9,40 @@
 </head>
 
 <body>
-    <button onclick="conversionTemperature()"></button>
+    <button onclick="conversionTemperature()">convertisseur</button>
     <script>
-        var menu = prompt("veuillez choisir une des option suivante :\n 0 Fin du programme\n 1 De Celsius vers Fahrenheit\n 2 De Celsius vers Kelvin\n 3 De Fahrenheit vers Celsius\n 4 De Fahrenheit vers Kelvin\n 5 De Kelvin vers Celsius\n 6 De Kelvin vers Fahrenheit")
+        function conversionTemperature(){
+        var menu = prompt("veuillez choisir une des option suivante :\n 0 Fin du programme\n 1 De Celsius vers Fahrenheit\n 2 De Celsius vers Kelvin\n 3 De Fahrenheit vers Celsius\n 4 De Fahrenheit vers Kelvin\n 5 De Kelvin vers Celsius\n 6 De Kelvin vers Fahrenheit");
+        switch(menu){
+            case "0":
+                break;
+            case '1': 
+            var temp = parseFloat(prompt("entrez la température en celsius"));
+            alert('la température en Farenheit est de ' +((temp*(9/5)) + 32));
+            break;
+            case '2':
+                var temp = parseFloat(prompt("entrez la température en celsius"));
+                alert('la température en Kelvin est de ' + (temp+273.15));
+                break;
+            case '3':
+                var temp = parseFloat(prompt("entrez la température en Farenheit"));
+                alert('la température en celsius est de '+ ((temp-32)/(9/5)));
+                break;
+            case '4':
+                var temp=parseFloat(prompt("entrez la température en Farenheit"));
+                alert('la température en Kelvin est de '+ (((temp - 32) * (5/9)) + 273,15));
+                break;
+            case '5':
+                var temp=parseFloat(prompt("entrez la température en Kelvin"));
+                alert('la température en celsius est de '+ (temp - 273.15));
+                break;
+            case '6':
+                var temp=parseFloat(prompt("entrez la température en Kelvin"));
+                alert('la température en farenheit est de '+ ((temp*(9/5))- 459.67));
+                break;
+            default:alert("vraiment?")
+        }
+    }
     </script>
 </body>
 
