@@ -6,7 +6,14 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+    <label for="nom">Votre nom  : </label><input type="text" onfocusout="thanksMSG()" name="nom" value="" id="nom"/>
   </form>
+  <p id="Msg"></p>
+  <script>
+  function thanksMSG(){
+    alert("Merci de votre participation");
+    document.getElementById("Msg").innerHTML = "Merci de votre participation";
+  }
+  </script>
 </body>
 </html>
