@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex 11 js</title>
+</head>
+<body>
+    <button onclick="calculeMoyenne()">calculer la moyenne</button>
+    <script>
+    function calculeMoyenne(){
+        var nbr=parseInt(prompt("entrez un nombre entier")), i=0, tab=[], moyenne=0
+       while(true){
+           if (!Number.isInteger(nbr)){
+            alert("ceci n'est pas un nombre entier");
+            nbr=parseInt(prompt("entrez un nombre entier"));
+              } else if (nbr>=0){
+              tab[i]=nbr;
+              i++;
+              nbr=parseInt(prompt("entrez un nombre entier"));
+        }else {
+         tab.forEach(function(tab){
+             moyenne+=tab;
+         });
+         return alert('la moyenne est de '+moyenne/i+' sur '+i+ ' entrée');
+        
+        }
+    }
+}
+    </script>
+</body>
+</html>

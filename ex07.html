@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex 07 js</title>
+</head>
+<body>
+    <button onclick="faireChoix()">lancer</button>
+    <script>
+    function faireChoix(){
+        var choice = parseInt(prompt("choisissez entre 1 2 ou 3"))
+        switch(choice){
+            case 1 : alert('1. Merci');
+            break;
+            case 2 : alert('2. Bonjour');
+            break;
+            case 3 : alert("3. Aurevoir");
+            break;
+            default: alert('Pardon what the ... Que voulez-vous?')
+        }
+    }
+    </script>
+</body>
+</html>

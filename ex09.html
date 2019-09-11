@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex 09 js</title>
+</head>
+<body>
+    <button onclick="testWhile()">executer le code</button>
+    <script>
+        
+    function testWhile(){
+        var arr= prompt("entrez une phrase contenant la lettre p")
+        while(!arr.includes("p")){
+        alert('votre phrase de contien pas de p')
+        var arr=prompt("entrez une phrase contenant la lettre p")
+        }alert("ok c'est correcte")
+    }
+    </script>
+</body>
+</html>

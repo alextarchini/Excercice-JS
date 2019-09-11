@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex 04 JS</title>
+</head>
+<body>
+    <button onclick="affiche()">calculer</button>
+    <script>
+    var tab = [-2,1,4];
+    function soustrait(x){
+        var result = x - 2
+        return result
+    };
+    function affiche(){
+        alert(soustrait(tab[0]));
+        alert(soustrait(tab[tab.length -1]))
+    }
+    </script>
+</body>
+</html>
