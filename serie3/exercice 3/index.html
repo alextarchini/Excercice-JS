@@ -6,7 +6,13 @@
 </head>
 <body>
   <form>
-    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom" />
+    <label for="nom">Votre nom  : </label><input type="text" onkeypress="Msg()" name="nom" value="Mike" id="nom" />
   </form>
+<script>
+function Msg(){
+  var msg = document.getElementById("nom").getAttribute("value");
+  alert("l'attribut valeur contient " + msg)
+}
+</script>
 </body>
 </html>
