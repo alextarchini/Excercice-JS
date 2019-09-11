@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ex 13 js</title>
+</head>
+<body>
+    <button onclick="calculIMC()">calculer votre IMC</button>
+    <p id="Imc"></p>
+    <script>
+    function calculIMC(){
+        var weight = parseFloat(prompt("entrez votre poid en kg"));
+        var tall = parseFloat(prompt("entrez votre taille en mètre"))
+        var IMC= parseFloat(weight/(tall^2));
+        console.log(IMC)
+        if(IMC<16.5){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("attention vous êtes bien trop maigre");
+        }else if(IMC>=16.5 && IMC<18.5){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("attention vous êtes maigre");
+        }else if(IMC>=18.5 && IMC<25){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("Bien vous avez une corpulance normal ");
+        }else if(IMC>=25 && IMC<30){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("attention vous êtes en surpoid");
+        }else if(IMC>=30 && IMC<35){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("attention vous êtes en obésité modéré");
+        }else if(IMC>=35 && IMC<40){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("attention vous êtes en obésité sévère");
+        }else if(IMC>=40){
+            document.getElementById("Imc").innerHTML="votre Imc est de "+ IMC.toFixed(2);
+            alert("attention vous êtes en obésité morbide");
+        }
+    }
+    </script>
+</body>
+</html>
