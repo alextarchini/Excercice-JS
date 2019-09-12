@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img onmouseover="addBorder()" onmouseleave="rmBorder()" src="images/image1.jpg" id="image1"/>
+      <script>
+      function addBorder(){
+        document.getElementById("image1").style.border="3px solid red";
+      }
+      function rmBorder(){
+        document.getElementById("image1").style.border="none";
+      }
+      </script>
+  </body>
+</html>
