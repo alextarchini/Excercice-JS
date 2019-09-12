@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>dessine moi un drapeau</title>
+</head>
+<body>
+    <canvas id="flag" width="300" height="400"></canvas>
+    <script>
+    var canvas = document.getElementById("flag");
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(300,0);
+    ctx.lineTo(300,200);
+    ctx.lineTo(0,200);
+    ctx.lineTo(0,400);  
+    ctx.lineTo(0,0);
+    ctx.fillStyle = "black";
+    ctx.fillRect(0,0,100,200);
+    ctx.fillStyle = "yellow";
+    ctx.fillRect(100,0,100,200);
+    ctx.fillStyle = "red";
+    ctx.fillRect(200,0,100, 200);
+    ctx.lineWidth= 3;
+    ctx.stroke()
+    </script>
+</body>
+</html>
