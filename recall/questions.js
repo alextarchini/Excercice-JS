@@ -263,7 +263,7 @@ var titleize = function (string) {
     var result2=''
     var temp = array[0].charAt(0);
 
-    result2=temp.toUpperCase()+array[0].slice(1) + ' '
+    result2=temp.toUpperCase()+array[0].slice(1)  
     console.log(result2)
     for(i=1; i < array.length; i++){
         if(array[i].length > 3){
@@ -275,10 +275,10 @@ var titleize = function (string) {
                 console.log(test)
                  result= test + array[i].slice(1)
                 console.log(result)
-                result2+=result + ' '
+                result2+=' '+result 
             }
         }else{
-            result2+= array[i] + ' '
+            result2+=' '+ array[i]
         }
     }
     console.log(result2)
