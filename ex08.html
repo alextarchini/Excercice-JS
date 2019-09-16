@@ -12,20 +12,21 @@
     function jourDeLaSemaine(){
         var date = new Date('September 15, 2019 00:15:00');
         var d= date.getDay();
+        console.log(d)
         switch(d){
-            case 1 : alert("lundi");
+            case 0 : alert("lundi");
             break;
-            case 2 : alert("mardi");
+            case 1 : alert("mardi");
             break;
-            case 3 : alert('mercredi');
+            case 2 : alert('mercredi');
             break;
-            case 4 : alert('Jeudi');
+            case 3 : alert('Jeudi');
             break;
-            case 5 : alert('vendredi');
+            case 4 : alert('vendredi');
             break;
-            case 6 : alert('samedi');
+            case 5 : alert('samedi');
             break;
-            case 0 : alert('dimanche');
+            case 6 : alert('dimanche');
             break;
             default : alert(d);
         }
