@@ -40,6 +40,7 @@ var removeNullAndFalseElements = function (array) {
     var remove = array.filter(function (val) {
         return val !== null && val !== false;
     });
+    console.log(remove)
     return remove;
 
 }
@@ -190,6 +191,7 @@ var convertArrayToObject = function (array) {
 var getAllLetters = function (array) {
     var str = array.toString()
     var result = str.split('')
+    console.log(result)
     var remove = result.filter(function (val) {
         return val !== ',';
     });
